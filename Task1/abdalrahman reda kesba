@@ -1,0 +1,12 @@
+#abd alrahman reda kesba
+
+def selection_sort(array):
+    for i in range (0, len(array) - 1):
+        min_index = i 
+        for j in range (i + i, len(array)):
+            if array[j] < array[min_index]:
+                min_index = j 
+                array[i], array[min_index] = array[min_index], array[j]
+                array = [10, 20, 30, 40, 50, 60]
+                selection_sort(array)
+                print(array)
